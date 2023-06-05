@@ -1,0 +1,295 @@
+@media (prefers-color-scheme: dark) {
+  :root {
+    --mine: #181818;
+    --window-colour: transparent;
+    --secondary-colour: #181818a0;
+    --inverted-colour: #fafafc;
+
+    /* Containter Tab Colours */
+    --uc-identity-colour-blue: #7ed6df;
+    --uc-identity-colour-turquoise: #55e6c1;
+    --uc-identity-colour-green: #b8e994;
+    --uc-identity-colour-yellow: #f7d794;
+    --uc-identity-colour-orange: #f19066;
+    --uc-identity-colour-red: #fc5c65;
+    --uc-identity-colour-pink: #f78fb3;
+    --uc-identity-colour-purple: #786fa6;
+
+    --uc-identity-colour-blue-muted: #7ed6df99;
+    --uc-identity-colour-turquoise-muted: #55e6c199;
+    --uc-identity-colour-green-muted: #b8e99499;
+    --uc-identity-colour-yellow-muted: #f7d794cc;
+    --uc-identity-colour-orange-muted: #f19066ff;
+    --uc-identity-colour-red-muted: #fc5c65ff;
+    --uc-identity-colour-pink-muted: #f78fb399;
+    --uc-identity-colour-purple-muted: #786fa6ff;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --mine: #eaeaea;
+    --window-colour: transparent;
+    --secondary-colour: #eaeaec;
+    --inverted-colour: #1e2021;
+
+    /* Containter Tab Colours */
+    --uc-identity-colour-blue: #1d65f5;
+    --uc-identity-colour-turquoise: #209fb5;
+    --uc-identity-colour-green: #40a02b;
+    --uc-identity-colour-yellow: #e49320;
+    --uc-identity-colour-orange: #fe640b;
+    --uc-identity-colour-red: #fc5c65;
+    --uc-identity-colour-pink: #ec83d0;
+    --uc-identity-colour-purple: #822fee;
+
+    --uc-identity-colour-blue-muted: #1d65f5ff;
+    --uc-identity-colour-turquoise-muted: #209fb5ff;
+    --uc-identity-colour-green-muted: #40a02bff;
+    --uc-identity-colour-yellow-muted: #e49320ff;
+    --uc-identity-colour-orange-muted: #fe640bff;
+    --uc-identity-colour-red-muted: #fc5c65ff;
+    --uc-identity-colour-pink-muted: #ec83d0ff;
+    --uc-identity-colour-purple-muted: #822feeff;
+  }
+}
+/* #back-button,
+#forward-button {
+  display: none !important;
+} */
+
+/* bookmark icon */
+#star-button {
+  display: none !important;
+}
+
+/* zoom indicator */
+#urlbar-zoom-button {
+  display: none !important;
+}
+
+/* Make button small as Possible, hidden out of sight */
+/* #PanelUI-button {
+    margin-top: -5px;
+    margin-bottom: 44px;
+  }
+  
+  #PanelUI-menu-button {
+    padding: 0px !important;
+    max-height: 1px;
+  
+    list-style-image: none !important;
+  }
+  
+  #PanelUI-menu-button .toolbarbutton-icon {
+    width: 1px !important;
+  }
+  #PanelUI-menu-button .toolbarbutton-badge-stack {
+    padding: 0px !important;
+  } */
+
+#reader-mode-button {
+  display: none !important;
+}
+
+/* tracking protection shield icon */
+#tracking-protection-icon-container {
+  display: none !important;
+}
+
+/* #identity-box { display: none !important } /* hides encryption AND permission items */
+#identity-permission-box {
+  display: none !important;
+} /* only hides permission items */
+
+/* e.g. playing indicator (secondary - not icon) */
+.tab-secondary-label {
+  display: none !important;
+}
+
+#pageActionButton {
+  display: none !important;
+}
+#page-action-buttons {
+  display: none !important;
+}
+
+#urlbar-go-button {
+  display: none !important;
+}
+#sidebar-header {
+  display: none;
+}
+
+#private-browsing-indicator-with-label,
+.titlebar-spacer[type="post-tabs"] {
+  display: none !important;
+}
+
+#tracking-protection-icon-box {
+  display: none;
+}
+
+#identity-box {
+  display: none !important;
+}
+
+#star-button-box {
+  visibility: collapse !important;
+}
+
+:root {
+  --urlbar-popup-url-color: var(--uc-identity-colour-purple) !important;
+
+  --uc-border-radius: 10px;
+
+  /* dynamic url bar width settings */
+  --uc-urlbar-width: clamp(200px, 1200vw, 1200px);
+}
+
+/*=============================================================================================*/
+
+/*---+---+---+---+---+---+
+ | L | A | Y | O | U | T |
+ +---+---+---+---+---+---*/
+
+/* No need to change anything below this comment.
+ * Just tweak it if you want to tweak the overall layout. c: */
+
+:root {
+  --uc-theme-colour: var(--window-colour, var(--toolbar-bgcolor));
+  --uc-hover-colour: var(--secondary-colour, rgba(0, 0, 0, 0.2));
+  --uc-inverted-colour: var(--inverted-colour, var(--toolbar-color));
+
+  --button-bgcolor: var(--uc-theme-colour) !important;
+  --button-hover-bgcolor: var(--uc-hover-colour) !important;
+  --button-active-bgcolor: var(--uc-hover-colour) !important;
+
+  --toolbarbutton-border-radius: var(--uc-border-radius) !important;
+
+  --tab-border-radius: var(--uc-border-radius) !important;
+  --lwt-text-color: var(--uc-inverted-colour) !important;
+  --lwt-tab-text: var(--uc-inverted-colour) !important;
+
+  --arrowpanel-border-radius: var(--uc-border-radius) !important;
+
+  --tab-block-margin: 2px !important;
+  --toolbar-field-focus-background-color: transparent !important;
+}
+
+#main-window,
+#toolbar-menubar,
+#TabsToolbar,
+#PersonalToolbar,
+#navigator-toolbox,
+#sidebar-box,
+#nav-bar {
+  -moz-appearance: none !important;
+
+  border: none !important;
+  box-shadow: none !important;
+  background: var(--uc-theme-colour) !important;
+}
+
+/* grey out ccons inside the toolbar to make it
+ * more aligned with the Black & White colour look */
+#PersonalToolbar toolbarbutton:not(:hover),
+#bookmarks-toolbar-button:not(:hover) {
+  filter: grayscale(1) !important;
+}
+
+/* remove window control buttons */
+.titlebar-buttonbox-container {
+  display: none !important;
+}
+
+/* remove "padding" left and right from tabs */
+.titlebar-spacer {
+  display: none !important;
+}
+
+#nav-bar {
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent !important;
+}
+
+/* remove border below whole nav */
+#navigator-toolbox {
+  border-bottom: none !important;
+}
+
+#urlbar,
+#urlbar * {
+  /* width: 100vh; */
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#urlbar-background {
+  border: var(--uc-hover-colour) !important;
+}
+
+#urlbar[focused="true"] > #urlbar-background,
+#urlbar:not([open]) > #urlbar-background {
+  background: transparent !important;
+}
+
+#urlbar[open] > #urlbar-background {
+  background: var(--mine) !important;
+}
+
+.urlbarView-row:hover > .urlbarView-row-inner,
+.urlbarView-row[selected] > .urlbarView-row-inner {
+  background: var(--secondary-colour) !important;
+}
+
+/* #statuspanel {
+  position: absolute !important;
+  bottom: 12px !important;
+  left: 12px !important;
+}
+
+#statuspanel #statuspanel-label {
+  border: none !important;
+  border-radius: var(--uc-border-radius) !important;
+  background: var(--uc-theme-colour) !important;
+} */
+
+/* transition to oneline */
+/* move tabs bar over */
+#TabsToolbar {
+  margin-top: 20px !important;
+  /* margin-left: var(--uc-urlbar-width) !important; */
+}
+
+/* move entire nav bar  */
+#nav-bar {
+  /* margin: calc((var(--urlbar-min-height) * -1) - 8px)
+    calc(70vw - var(--uc-urlbar-width)) 0 0 !important; */
+
+  margin-top: calc((var(--urlbar-min-height) * -1) - 8px) !important;
+}
+
+#tabbrowser-tabs {
+  display: none !important;
+}
+
+.titlebar-buttonbox-container {
+  display: block !important;
+  position: absolute !important;
+  top: 13px;
+  left: 4px;
+}
+
+#alltabs-button {
+  display: none !important;
+}
+
+#firefox-view-button {
+  display: none !important;
+}
+
+#identity-box.extensionPage > #identity-icon-box {
+  display: none;
+}
