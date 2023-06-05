@@ -1,6 +1,6 @@
 # TransparentFirefox!
 
-
+https://github.com/muhammadfaruq72/TransparentFirefox/blob/main/Screenshot.png
 
 # Installation
 
