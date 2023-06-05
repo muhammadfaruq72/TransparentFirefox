@@ -28,5 +28,15 @@ May look something like: /home/{username}/.mozilla/firefox/...
   display: none;
 }
 `
+
 7 - Make sure to Customise toolbar, Add/Remove Spaces.
 8 - If you have any issues with Close/Minimize Buttons on windows or Mac try to alter these CSS properties in "min-one-line/userChrome.css" file.
+
+`
+.titlebar-buttonbox-container {
+  display: block !important;
+  position: absolute !important;
+  top: 13px;
+  left: 4px;
+}
+`
