@@ -1,6 +1,6 @@
 # TransparentFirefox!
 
-[Uploading Screenshot 2023-06-06 at 1.38.40 AM.png…]()
+
 
 # Installation
 
